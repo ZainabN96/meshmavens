@@ -1101,7 +1101,8 @@ hr.divider-light {
   content: "";
   position: absolute;
   /* background: #e1f0fa; */
-  background: #f1ffe4;
+  /* background: #f1ffe4; */
+  background: #e1ede5;
   right: -60px;
   top: -40px;
   width: 100px;
@@ -1338,7 +1339,8 @@ hr.divider-light {
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
   /* color: #e1f0fa; */
-  color: #f1ffe4;
+  /* color: #f1ffe4; */
+  color: #e1ede5;
   font-size: 26px;
 }
 
@@ -1601,18 +1603,41 @@ hr.divider-light {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
+
+#team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#team .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#team .col-lg-6 {
+  margin-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 90px;
+}
+
+
 .img-team{
   max-width: 330px;
   height: auto;
 }
 
 .team .member {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .team .member .member-img {
@@ -1814,7 +1839,8 @@ hr.divider-light {
 }
 
 .faq .faq-item i {
-  color: #8bc4ea;
+  /* color: #8bc4ea; */
+  color: #e1ede5;
   font-size: 24px;
   float: left;
   line-height: 0;
