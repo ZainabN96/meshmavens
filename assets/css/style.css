@@ -607,7 +607,9 @@ section {
 
 .section-bg {
   /* background-color: #f7fbfe; */
-  background-color: #f1ffe4;
+  /* background-color: #f1ffe4; */
+  /* background-color: #3e703f; */
+  background-color: #e1ede5;
 }
 
 .section-title {
@@ -651,7 +653,8 @@ section {
 --------------------------------------------------------------*/
 .clients {
   /* background: #f3f9fd; */
-  background: #f1ffe4;
+  /* background: #f1ffe4; */
+  background: #e1ede5;
   padding: 10px 0;
   text-align: center;
 }
