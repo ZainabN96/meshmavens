@@ -11,10 +11,6 @@
 --------------------------------------------------------------*/
 
 
-
-
-
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -100,8 +96,9 @@ h6 {
   bottom: 15px;
   z-index: 996;
   /* background: #66a346; */
-  background: #026666cc;
+  /* background: #026666cc; */
   background: #02663bcc;
+
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -116,9 +113,10 @@ h6 {
 
 .back-to-top:hover {
   /* background: #57aae1; */
-  background: #94c567;
+  background: #3e703f;
   color: #fff;
 }
+
 
 .back-to-top.active {
   visibility: visible;
@@ -1853,6 +1851,8 @@ hr.divider-light {
   color: #888;
 }
 
+
+
 .contact .social-links {
   padding-bottom: 20px;
 }
@@ -1861,7 +1861,7 @@ hr.divider-light {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #66a346;
+  color: #02663bcc;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1870,12 +1870,12 @@ hr.divider-light {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #66a346;
+  border: 1px solid #02663bcc;
 }
 
 .contact .social-links a:hover {
   /* background: #66a346; */
-  background: #026666cc;
+  background: #02663bcc;
   color: #fff;
 }
 
@@ -1886,7 +1886,7 @@ hr.divider-light {
 .contact .info i {
   font-size: 32px;
   /* color: #66a346; */
-  color: #026666cc;
+  color: #02663bcc;
   float: left;
   line-height: 1;
 }
@@ -1900,7 +1900,7 @@ hr.divider-light {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #02663bcc;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1913,7 +1913,7 @@ hr.divider-light {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #02663bcc;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1933,7 +1933,7 @@ hr.divider-light {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #02663bcc;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1953,12 +1953,12 @@ hr.divider-light {
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
   /* border-color: #66a346; */
-  border-color: #026666cc;
+  border-color: #02663bcc;
 }
 
 .contact .php-email-form button[type=submit] {
   /* background: #66a346; */
-  background: #026666cc;
+  background: #02663bcc;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -2070,5 +2070,5 @@ hr.divider-light {
 
 #footer .footer-links a:hover {
   /* color: #66a346; */
-  color: #026666cc;
+  color: #3e703f;
 }
