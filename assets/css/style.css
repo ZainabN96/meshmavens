@@ -509,7 +509,7 @@ header.masthead h1, header.masthead .h1 {
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 78px;
+  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
@@ -529,7 +529,11 @@ header.masthead h1, header.masthead .h1 {
   background: #02663bcc;
   color: #fff;
 }
-
+.hero-video{
+  width: 500px;
+  height: 300px;
+  /* margin-bottom: 500px; */
+}
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
@@ -1596,6 +1600,11 @@ hr.divider-light {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.img-team{
+  max-width: 330px;
+  height: auto;
+}
+
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
