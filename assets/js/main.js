@@ -265,13 +265,30 @@
   $("#toggle").click(function() {
     var elem = $("#toggle").text();
     if (elem == "Read More") {
-      //Stuff to do when btn is in the read more state
+    
       $("#toggle").text("Read Less");
       $("#text").slideDown();
     } else {
-      //Stuff to do when btn is in the read less state
+     
       $("#toggle").text("Read More");
       $("#text").slideUp();
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollThreshold = 600; 
+    var header = document.getElementById("header");
+    var isNavbarVisible = false;
+  
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > scrollThreshold) {
+        header.classList.add("header-scrolled");
+        isNavbarVisible = true;
+      } else if (window.scrollY <= scrollThreshold) {
+        header.classList.remove("header-scrolled");
+        isNavbarVisible = false;
+      }
+    });
+  });
+
 })();
