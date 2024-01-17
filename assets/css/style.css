@@ -305,6 +305,7 @@ header.masthead h1, header.masthead .h1 {
   margin-left: 30px;
   border-radius: 50px;
   color: #fff;
+  font-weight: bold;
 }
 
 .navbar .getstarted:hover,
@@ -1295,12 +1296,6 @@ hr.divider-light {
   color: #fff;
 }
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -1308,24 +1303,29 @@ hr.divider-light {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 200px;
+ padding-left: 200px; 
 }
 
+.features .container{
+  width: 100%;
+}
 
 .features .icon-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 40px;
-  padding-right: 30px;
+  margin: 10px 10px; 
+  padding: 20px;
   background: #f6f6f6;
   transition: ease-in-out 0.3s;
-  justify-content: center;
+  padding-left: 20px;
 }
 
 .features .icon-box img {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
+  padding-bottom: 15px;
 }
 
 .features .icon-box h3 {
