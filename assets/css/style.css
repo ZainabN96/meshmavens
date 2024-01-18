@@ -15,6 +15,7 @@ body{
   font-family: "DM Sans";
   color: black;
   background-color: #f3f3ec;
+  font-size: 25px;
 }
 
 [data-aos][data-aos][data-aos-easing=ease-in-out], body[data-aos-easing=ease-in-out] [data-aos] {
@@ -83,8 +84,9 @@ h4,
 h5,
 h6 {
   /* font-family: "Raleway", sans-serif; */
-  font-family: "Oswald";
+ font-family: 'Oswald', sans-serif;
   font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /*--------------------------------------------------------------
@@ -232,7 +234,8 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 25px;
+
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -305,7 +308,11 @@ header.masthead h1, header.masthead .h1 {
   margin-left: 30px;
   border-radius: 50px;
   color: #fff;
-  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "DM Sans" ;
+  
 }
 
 .navbar .getstarted:hover,
@@ -352,7 +359,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .navbar .dropdown:hover>ul {
-  opacity: 1;
+  /* opacity: 1; */
   top: 100%;
   visibility: visible;
 }
@@ -536,6 +543,7 @@ header.masthead h1, header.masthead .h1 {
 
 .btn-get-started {
   font-family: "Raleway", sans-serif;
+  /* font-family: "DM Sans"; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -718,7 +726,7 @@ section {
 
 .clients img {
    /* width: 50%;  */
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
@@ -727,10 +735,10 @@ section {
 
 }
 
-.clients img:hover {
+/* .clients img:hover {
   filter: none;
   transform: scale(1.1);
-}
+} */
 
 @media (max-width: 768px) {
   .clients img {
@@ -755,10 +763,8 @@ section {
  /* background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;  */
 
 
-
-
 .page-section {
-  padding: 8rem 0;
+  padding: 5rem 0;
   }
 
 hr.divider {
@@ -812,7 +818,7 @@ hr.divider-light {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans";
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -870,7 +876,7 @@ hr.divider-light {
 
   .btn-xl {
     padding: 1rem 2rem;
-    font-size: 0.85rem;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     border: none;
@@ -945,6 +951,7 @@ hr.divider-light {
   font-weight: 700;
   font-size: 34px;
   color: #000000;
+
 }
 
 .counts .content p {
@@ -978,23 +985,36 @@ hr.divider-light {
 .counts .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #484848;
+  color: #484848; */
+
+  font-family: "DM Sans";
+  font-size: 25px;
+  /* color: #484848; */
+  color: black;
 }
 
 .counts .content .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #484848;
-  font-size: 15px;
+  /* color: #484848; */
+  color: black;
+
+  /* font-size: 15px;
   font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s; */
+
+  font-size: 15px;
+  font-family: "DM Sans";
   transition: ease-in-out 0.3s;
 }
 
 .counts .content .count-box a:hover {
-  color: #6f6f6f;
+  /* color: #6f6f6f; */
+
+  color: #3b7150;
 }
 
 @media (max-width: 1024px) {
@@ -1199,7 +1219,7 @@ hr.divider-light {
 }
 
 .services .title a {
-  color: #111;
+  color: black;
 }
 
 .services .description {
@@ -1303,7 +1323,7 @@ hr.divider-light {
   display: flex;
   align-items: center;
   justify-content: center;
- padding-left: 200px; 
+ 
 }
 
 .features .container{
@@ -1333,7 +1353,7 @@ hr.divider-light {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-size: 16px;
+  font-size: 18px;
  
 }
 
@@ -1788,10 +1808,10 @@ hr.divider-light {
 }
 
 .pricing .box h3 {
-  font-weight: 400;
+  
   padding: 15px;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
   color: #000000;
 }
@@ -1802,12 +1822,13 @@ hr.divider-light {
   /* color: #026666cc; */
   color: #64ab73;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: "DM Sans";
   margin-bottom: 20px;
+  
 }
 
 .pricing .box h4 sup {
-  font-size: 20px;
+  font-size: 25px;
   top: -15px;
   left: -3px;
 }
@@ -1824,7 +1845,7 @@ hr.divider-light {
   color: #000000;
   text-align: center;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 25px;
 }
 
 .pricing .box ul li {
@@ -1860,8 +1881,7 @@ hr.divider-light {
   /* color: #026666cc; */
   color: #64ab73;
   font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans";
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1869,7 +1889,8 @@ hr.divider-light {
 .pricing .box .btn-buy:hover {
   /* background: #66a346; */
   /* background: #026666cc; */
-  background: #64ab73;
+  background: #3b7150;
+  border: #3b7150;
   color: #fff;
 }
 
@@ -1886,9 +1907,9 @@ hr.divider-light {
 
 .pricing .recommended .btn-buy:hover {
   /* background: #026666cc; */
-  background: #64ab73;
+  background: #3b7150;
   /* border-color: #026666cc; */
-  border-color: #64ab73;
+  border-color: #3b7150;
 }
 
 /*--------------------------------------------------------------
@@ -1902,7 +1923,7 @@ hr.divider-light {
 
 .faq .faq-item i {
   /* color: #8bc4ea; */
-  color: #e1ede5;
+  
   color: #64ab73;
   font-size: 24px;
   float: left;
@@ -1912,11 +1933,12 @@ hr.divider-light {
 }
 
 .faq .faq-item h4 {
-  font-size: 16px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 500;
   margin: 0 0 10px 32px;
-  font-family: "Poppins", sans-serif;
+  font-family: "DM Sans";
+
 }
 
 .faq .faq-item p {
@@ -1937,10 +1959,10 @@ hr.divider-light {
 }
 
 .contact .contact-about p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  font-family: "Raleway", sans-serif;
-  color: #888;
+  font-family: "DM Sans";
+  color: black;
 }
 
 
@@ -1967,12 +1989,12 @@ hr.divider-light {
 
 .contact .social-links a:hover {
   /* background: #66a346; */
-  background: #64ab73;
+  background: #3b7150 ;
   color: #fff;
 }
 
 .contact .info {
-  color: #444444;
+  color: black;
 }
 
 .contact .info i {
@@ -1986,7 +2008,8 @@ hr.divider-light {
 .contact .info p {
   padding: 0 0 10px 42px;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 16px;
+
 }
 
 .contact .php-email-form .error-message {
@@ -2056,6 +2079,9 @@ hr.divider-light {
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -2147,7 +2173,7 @@ hr.divider-light {
 }
 
 #footer .credits {
-  font-size: 13px;
+  font-size: 14px;
   padding-top: 5px;
   color: #000000;
 }
