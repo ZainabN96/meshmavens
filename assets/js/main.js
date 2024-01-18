@@ -261,7 +261,7 @@
    */
   new PureCounter();
 
-
+   
   $("#toggle").click(function() {
     var elem = $("#toggle").text();
     if (elem == "Read More") {
@@ -274,8 +274,18 @@
       $("#text").slideUp();
     }
   });
+  
 
   document.addEventListener("DOMContentLoaded", function () {
+    var phoneNumber = '+971504172676';
+  
+    $('#contactUsBtn').on('click', function (e) {
+      e.preventDefault();
+      var whatsappLink = 'https://api.whatsapp.com/send?phone=' + encodeURIComponent(phoneNumber);
+      window.open(whatsappLink, '_blank');
+    }); 
+
+ 
     var scrollThreshold = 600; 
     var header = document.getElementById("header");
     var isNavbarVisible = false;
