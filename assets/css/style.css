@@ -15,9 +15,10 @@
 /* Apply Lora font family to the body */
 body {
   font-family: 'Lora', sans-serif; /* Use Lora as the preferred font, fallback to a generic sans-serif font */
-  background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important;
+  /* background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important; */
   color: black;
   font-size: 25px;
+
 }
 
 
@@ -90,8 +91,8 @@ h6 {
    font-family: "Raleway", sans-serif; 
  /* font-family: 'Oswald', sans-serif; */
   font-weight: bold;
-  /* color: black; */
-  color: white;
+  color: black;
+  
 }
 
 /*--------------------------------------------------------------
@@ -193,6 +194,11 @@ h6 {
   height: 300px;
 } */
 
+.masthead {
+  background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important;
+  background-size: cover; 
+
+}
 @media (min-width: 1024px){
 
 .masthead #hero {
@@ -234,8 +240,8 @@ header.masthead {
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
-  /* color: black; */
-  color: #fff;
+  color: black;
+  
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -250,13 +256,13 @@ header.masthead h1, header.masthead .h1 {
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
-    color: #fff;
+    color: black;
   }
 }
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
-    color: #fff;
+    color: black;
   }
 }
 
@@ -544,7 +550,7 @@ padding-bottom: 70px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: black;
 }
 
 /* #hero h2 {
@@ -640,7 +646,7 @@ padding-bottom: 70px;
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
-    color: #fff;
+    color: black;
   }
 
   #hero h2 {
@@ -648,7 +654,7 @@ padding-bottom: 70px;
     line-height: 24px;
     margin-bottom: 30px;
     /* color: black; */
-    color: #fff;
+    color: black;
   }
 
   #hero .hero-img img {
@@ -690,7 +696,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
-  color: #fff;
+  color: black;
 }
 
 .section-title h2 {
@@ -700,7 +706,7 @@ section {
   position: relative;
   /* color: #000000; */
   /* color: black; */
-  color: #fff;
+  color: black;
 }
 
 .section-title h2::before,
@@ -837,7 +843,7 @@ hr.divider-light {
   font-weight: 600;
   font-size: 26px;
   /* color: #64ab73; */
-  color: #fff;
+  color: black;
 }
 
 .about .content ul {
@@ -924,14 +930,14 @@ background-color: #3b7150;
     /* color: rgba(255, 255, 255, 0.75) !important; */
     /* color:#64ab73; */
     /* color: #5A5A5A; */
-    color: 	#fff;
+    color: 	black;
     font-family: 'Lora', sans-serif;
     /* color: #3b3b3b; */
     
   }
 
  .page-section h2{
-  color: #fff;
+  color: black;
 
   /* color: #64ab73; */
  }
@@ -1241,7 +1247,7 @@ background-color: #3b7150;
 }
 
 .services .section-title {
-  color: #fff;
+  color: black;
 }
 .services .icon-box::before {
   content: "";
@@ -2063,11 +2069,11 @@ background-color: #3b7150;
 /* .card-02 .card-text{
   font-size: 22px;
 } */
-/* 
+
 
 .pricing .section-title{
   color: black;
-} */
+} 
 
 .icon-image {
   width: 200px; /* Adjust the width as per your requirement */
@@ -2236,7 +2242,7 @@ color: black;
   font-weight: 700;
   letter-spacing: 1px;
   /* color: #000000; */
-  color: #fff;
+  color: black;
 }
 
 .contact .contact-about p {
@@ -2245,7 +2251,7 @@ color: black;
   /* font-family: "DM Sans"; */
   font-family: 'Lora', sans-serif;
   /* color: black; */
-  color: #fff;
+  color: black;
 }
 
 
@@ -2280,7 +2286,7 @@ color: black;
 }
 
 .contact .info {
-  color: #fff;
+  color: black;
 }
 
 .contact .info i {
@@ -2302,7 +2308,6 @@ color: black;
   display: none;
   color: #fff;
   background: #64ab73;
-
   text-align: left;
   padding: 15px;
   font-weight: 600;
