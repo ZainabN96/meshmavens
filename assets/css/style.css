@@ -11,14 +11,15 @@
 --------------------------------------------------------------*/
 
 
-body{
-  font-family: "DM Sans";
- /* background-color: #fff;  */
- background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important; 
+
+/* Apply Lora font family to the body */
+body {
+  font-family: 'Lora', sans-serif; /* Use Lora as the preferred font, fallback to a generic sans-serif font */
+  background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important;
   color: black;
   font-size: 25px;
-
 }
+
 
 [data-aos][data-aos][data-aos-easing=ease-in-out], body[data-aos-easing=ease-in-out] [data-aos] {
   transition-timing-function: ease-in-out;
@@ -89,8 +90,8 @@ h6 {
    font-family: "Raleway", sans-serif; 
  /* font-family: 'Oswald', sans-serif; */
   font-weight: bold;
-  
-  color: black;
+  /* color: black; */
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -233,7 +234,8 @@ header.masthead {
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
-  color: black;
+  /* color: black; */
+  color: #fff;
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -248,13 +250,13 @@ header.masthead h1, header.masthead .h1 {
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
-    color: black;
+    color: #fff;
   }
 }
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
-    color: black;
+    color: #fff;
   }
 }
 
@@ -324,7 +326,8 @@ header.masthead h1, header.masthead .h1 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "DM Sans" ;
+  /* font-family: "DM Sans" ; */
+  font-family: 'Lora', sans-serif;
   
 }
 
@@ -541,7 +544,7 @@ padding-bottom: 70px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: black;
+  color: #fff;
 }
 
 /* #hero h2 {
@@ -568,8 +571,9 @@ padding-bottom: 70px;
 /* }  */
 
 .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   /* font-family: "DM Sans"; */
+  font-family: 'Lora', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -636,14 +640,15 @@ padding-bottom: 70px;
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
-    color: black;
+    color: #fff;
   }
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
-    color: black;
+    /* color: black; */
+    color: #fff;
   }
 
   #hero .hero-img img {
@@ -685,6 +690,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  color: #fff;
 }
 
 .section-title h2 {
@@ -693,7 +699,8 @@ section {
   text-transform: uppercase;
   position: relative;
   /* color: #000000; */
-  color: black;
+  /* color: black; */
+  color: #fff;
 }
 
 .section-title h2::before,
@@ -829,7 +836,8 @@ hr.divider-light {
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #64ab73;
+  /* color: #64ab73; */
+  color: #fff;
 }
 
 .about .content ul {
@@ -862,7 +870,9 @@ hr.divider-light {
 }
 
 .about .content .btn-learn-more {
-  font-family: "DM Sans";
+  /* font-family: "DM Sans"; */
+  font-family: 'Lora', sans-serif;
+
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -915,13 +925,14 @@ background-color: #3b7150;
     /* color:#64ab73; */
     /* color: #5A5A5A; */
     color: 	#fff;
-
+    font-family: 'Lora', sans-serif;
     /* color: #3b3b3b; */
     
   }
 
  .page-section h2{
-  color: black;
+  color: #fff;
+
   /* color: #64ab73; */
  }
   
@@ -1051,7 +1062,8 @@ background-color: #3b7150;
   font-size: 14px;
   color: #484848; */
 
-  font-family: "DM Sans";
+  /* font-family: "DM Sans"; */
+  font-family: 'Lora', sans-serif;
   font-size: 25px;
   /* color: #484848; */
   color: black;
@@ -1069,7 +1081,8 @@ background-color: #3b7150;
   transition: ease-in-out 0.3s; */
 
   font-size: 15px;
-  font-family: "DM Sans";
+  /* font-family: "DM Sans"; */
+  font-family: 'Lora', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1227,6 +1240,9 @@ background-color: #3b7150;
   z-index: 1;
 }
 
+.services .section-title {
+  color: #fff;
+}
 .services .icon-box::before {
   content: "";
   position: absolute;
@@ -1286,6 +1302,7 @@ background-color: #3b7150;
 
 .services .title a {
   color: black;
+  
   /* color: #64ab73; */
 }
 
@@ -2046,10 +2063,11 @@ background-color: #3b7150;
 /* .card-02 .card-text{
   font-size: 22px;
 } */
+/* 
 
 .pricing .section-title{
   color: black;
-}
+} */
 
 .icon-image {
   width: 200px; /* Adjust the width as per your requirement */
@@ -2197,7 +2215,8 @@ background-color: #3b7150;
   line-height: 26px;
   font-weight: 500;
   margin: 0 0 10px 32px;
-  font-family: "DM Sans";
+  /* font-family: "DM Sans"; */
+  font-family: 'Lora', sans-serif;
 color: black;
 }
 
@@ -2217,15 +2236,16 @@ color: black;
   font-weight: 700;
   letter-spacing: 1px;
   /* color: #000000; */
-color: black;
+  color: #fff;
 }
 
 .contact .contact-about p {
   font-size: 16px;
   line-height: 24px;
-  font-family: "DM Sans";
+  /* font-family: "DM Sans"; */
+  font-family: 'Lora', sans-serif;
   /* color: black; */
-  color: black;
+  color: #fff;
 }
 
 
@@ -2260,7 +2280,7 @@ color: black;
 }
 
 .contact .info {
-  color: black;
+  color: #fff;
 }
 
 .contact .info i {
