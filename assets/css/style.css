@@ -194,10 +194,13 @@ h6 {
   height: 300px;
 } */
 
+.masthead{
+   .circular { border-radius: 100%; } 
+}
+
 .masthead {
   background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important;
   background-size: cover; 
-
 }
 @media (min-width: 1024px){
 
