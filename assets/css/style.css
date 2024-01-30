@@ -198,10 +198,10 @@ h6 {
    .circular { border-radius: 100%; } 
 }
 
-.masthead {
+/* .masthead {
   background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important;
   background-size: cover; 
-}
+} */
 @media (min-width: 1024px){
 
 .masthead #hero {
@@ -2060,7 +2060,7 @@ background-color: #3b7150;
 }
 
 .card__back .card-body .card-text{
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .card__front .card-body .card-text {
@@ -2469,7 +2469,7 @@ color: black;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
   
-  font-size: 15px;
+  font-size: 14px;
 }
 
 #footer .credits {
