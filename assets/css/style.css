@@ -225,7 +225,7 @@ h6 {
     display: flex!important;
 }
 section {
-    padding: 60px 0;
+    /* padding: 60px 0; */
     overflow: hidden;
 }
 *, ::after, ::before {
@@ -274,7 +274,34 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-/*--------------------------------------------------------------
+
+#hero .getstarted,
+#hero .getstarted:focus {
+  background: #64ab73;
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* font-family: "DM Sans" ; */
+  font-family: 'Lora', sans-serif;
+
+
+}
+
+
+#hero .getstarted:hover,
+#hero .getstarted:focus:hover{
+  color: #fff;
+  background: #3b7150;
+
+}
+
+
+/*------------
+--------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
@@ -691,7 +718,7 @@ padding-bottom: 70px;
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 50px 0;
+  padding: 25px 0;
   overflow: hidden;
 }
 
@@ -742,10 +769,10 @@ background: #64ab73;
   margin: 15px 0 0 0;
  
 }
-/* Add this CSS for responsiveness in the Services section */
-@media only screen and (max-width: 420px) {
+
+@media only screen and (max-width: 391px) {
   .section-title h2 {
-    text-align: center; /* Center the text on smaller screens */
+    text-align: center; 
     font-size: 20px;
   }
 
@@ -756,18 +783,43 @@ background: #64ab73;
     width: 35px;
     height: 2px;
     background: #64ab73;
-    vertical-align: middle; /* Align the lines vertically in the middle */
+    vertical-align: middle; 
   }
 
   .section-title h2::before {
-    margin-right: 2px; /* Adjust spacing between text and line on the right */
+    margin-right: 2px; 
   }
 
   .section-title h2::after {
-    margin-left: 2px; /* Adjust spacing between text and line on the left */
+    margin-left: 2px; 
   }
 }
 
+
+@media only screen and (min-width: 392px) {
+  .section-title h2 {
+    text-align: center; /* Center the text on smaller screens */
+    font-size: 30px;
+  }
+
+  .section-title h2::before,
+  .section-title h2::after {
+    display: inline-block;
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #64ab73;
+    vertical-align: middle; 
+  }
+
+  .section-title h2::before {
+    margin-right: 2px; 
+  }
+
+  .section-title h2::after {
+    margin-left: 2px; 
+  }
+}
 
 
 
@@ -830,7 +882,7 @@ background: #64ab73;
 
 @media (max-width: 575px) {
   .clients img {
-    width: 40%;
+    width: 25%;
   }
 } 
 
@@ -1220,6 +1272,7 @@ background-color: #3b7150;
   color: #fff;
 }
 
+
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
@@ -1267,7 +1320,7 @@ background-color: #3b7150;
 
 
 .services .icon-box {
-  /* padding: 20px;  */
+  padding: 20px;  
   margin: 10px; 
   position: relative;
   overflow: hidden;
@@ -1369,7 +1422,7 @@ background-color: #3b7150;
 }
 
 
-@media only screen and (max-width: 420px) {
+@media (max-width: 420px) {
   .services-row {
     flex-direction: column;
   }
@@ -1377,9 +1430,20 @@ background-color: #3b7150;
   .services .icon-box {
     width: 100%;
   }
-
-
 }
+
+
+@media (max-width: 768px) {
+  .services-row {
+    flex-direction: column;
+  }
+
+  .services .icon-box {
+    width: 100%;
+  }
+}
+
+
 
 
 
@@ -2093,7 +2157,7 @@ background-color: #3b7150;
   color: #000;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 28px;
   position: relative;
   z-index: 3;
   font-weight: bold;
@@ -2151,7 +2215,7 @@ background-color: #3b7150;
       margin: 3px auto;
     }
     .card-title{
-     font-size: 23px;
+     font-size: 20px;
     }
     
   }
@@ -2180,10 +2244,10 @@ background-color: #3b7150;
 
   }
 
-  @media screen and (min-device-width: 531px) and (max-device-width: 992px) {
+  @media screen and (min-device-width: 531px) and (max-device-width: 900px) {
 
     .card__back .card-body .card-text{
-      font-size: 21px;
+      font-size: 18px;
       max-width: 100%; 
       margin: 0 auto; 
     }
