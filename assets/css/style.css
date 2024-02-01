@@ -743,9 +743,10 @@ background: #64ab73;
  
 }
 /* Add this CSS for responsiveness in the Services section */
-@media (max-width: 767px) {
+@media only screen and (max-width: 420px) {
   .section-title h2 {
     text-align: center; /* Center the text on smaller screens */
+    font-size: 20px;
   }
 
   .section-title h2::before,
@@ -759,13 +760,17 @@ background: #64ab73;
   }
 
   .section-title h2::before {
-    margin-right: 5px; /* Adjust spacing between text and line on the right */
+    margin-right: 2px; /* Adjust spacing between text and line on the right */
   }
 
   .section-title h2::after {
-    margin-left: 5px; /* Adjust spacing between text and line on the left */
+    margin-left: 2px; /* Adjust spacing between text and line on the left */
   }
 }
+
+
+
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -829,7 +834,7 @@ background: #64ab73;
   }
 } 
 
-@media (min-width: 1000px) {
+@media (min-width: 769px) {
   .clients img {
     width: 50%;
   }
@@ -1249,7 +1254,7 @@ background-color: #3b7150;
 
 .services .services-row {
   display: flex;
-  justify-content: space-between; /* Adjust as needed */
+  justify-content: space-between; 
 }
 
 .change {
@@ -1262,8 +1267,8 @@ background-color: #3b7150;
 
 
 .services .icon-box {
-  padding: 20px; /* Adjust the padding as needed */
-  margin: 10px; /* Add margin for spacing */
+  /* padding: 20px;  */
+  margin: 10px; 
   position: relative;
   overflow: hidden;
   /* background: #fff; */
@@ -1294,9 +1299,6 @@ background-color: #3b7150;
   transition: all 0.3s;
   z-index: -1;
 }
-
-
-
 
 .services .icon-box:hover::before {
   /* background: #66a346; */
@@ -1367,14 +1369,16 @@ background-color: #3b7150;
 }
 
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 420px) {
   .services-row {
     flex-direction: column;
   }
 
   .services .icon-box {
-    width: 100%; /* Make each card take full width on small screens */
+    width: 100%;
   }
+
+
 }
 
 
@@ -1954,7 +1958,7 @@ background-color: #3b7150;
 
 .card-01 .card-body {
   position: relative;
-   padding-top: 60px;
+   /* padding-top: 60px; */
   /* height: 300px;
   width: 100%;
   text-align: center;
@@ -1974,7 +1978,7 @@ background-color: #3b7150;
 } */
 .card-02 .card-body {
   position: relative;
-  padding-top: 45px;
+  /* padding-top: 45px; */
   /* padding-bottom: 50px; */
 } 
 /* 
@@ -2038,24 +2042,24 @@ background-color: #3b7150;
 .card__back .card {
   width: 100%;
   height: 400px;
-}
+} 
 
 .card__front .card{
   width: 90%;
   height: 390px;
 }
 
-.card__front, .card__back {
+ .card__front, .card__back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
+} 
 
 
 
 .card__back {
-  /* background-color: #1e1e1e; */
+ 
   -webkit-transform: rotateY(-180deg);
    -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
@@ -2083,8 +2087,7 @@ background-color: #3b7150;
   -webkit-transform: rotateY(0);
   -ms-transform: rotateY(0);
   transform: rotateY(0);
-} 
-
+}  
 .card-title{
   width: 100%;
   color: #000;
@@ -2097,7 +2100,7 @@ background-color: #3b7150;
 }
 
 .card__back .card-body .card-text{
-  font-size: 19px;
+  font-size: 17px;
   max-width: 100%; /* Adjust as needed */
   margin: 0 auto; /* Center the text horizontally */
 }
@@ -2133,7 +2136,27 @@ background-color: #3b7150;
 } 
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 375px) {
+ 
+  .card__back .card-body .card-text{
+    font-size: 14px;
+    }
+     .card__back .card-02 .card-body {
+      width: 100%;
+      height: 200px;
+    } 
+    .card__front .card-body .card-text {
+      font-size: 14px;
+      max-width: 100%;
+      margin: 3px auto;
+    }
+    .card-title{
+     font-size: 23px;
+    }
+    
+  }
+
+@media (min-width: 401px) and (max-width: 429px) {
  
   .card__back .card-body .card-text,
   .card__front .card-body .card-text {
@@ -2142,20 +2165,42 @@ background-color: #3b7150;
     margin: 0 auto; /* Center the text horizontally */
   }
   .card__back .card-body .card-text{
-    font-size: 14.9px;
-  }
-  
-}
-
-@media (max-width: 768px) {
-  .card__back .card,
-  .card__front .card {
-    width: 90%; /* Adjust as needed */
-    
+    font-size: 12px;
   }
 
-
 }
+
+
+  @media screen and (min-device-width: 401px) and (max-device-width: 530px) { 
+  .card__back .card-body .card-text{
+    font-size: 18.4px;
+    max-width: 100%; 
+    margin: 0 auto; 
+  }
+
+  }
+
+  @media screen and (min-device-width: 531px) and (max-device-width: 992px) {
+
+    .card__back .card-body .card-text{
+      font-size: 21px;
+      max-width: 100%; 
+      margin: 0 auto; 
+    }
+
+  }
+
+  @media screen and (min-device-width: 993px)  {
+
+    .card__back .card-body .card-text{
+      font-size: 20px;
+      max-width: 100%; 
+      margin: 0 auto; 
+    }
+
+  }
+
+
 /* .pricing .box {
   background: #f9f9f9;
   text-align: center;
