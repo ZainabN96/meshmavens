@@ -17,7 +17,7 @@ body {
   font-family: 'Lora', sans-serif; /* Use Lora as the preferred font, fallback to a generic sans-serif font */
   /* background-image: linear-gradient(to right, rgba(18, 53, 36, 1), rgba(95, 111, 82, 1)) !important; */
   color: black;
-  font-size: 25px;
+font-size: 18px;
 
 }
 
@@ -185,6 +185,11 @@ h6 {
   max-height: 50px;
 }
 
+@media (max-width: 767px) {
+  #header {
+    padding: 15px 0; /* Adjust padding for smaller screens */
+  }
+}
 /*--------------------------------------------------------------
 # Masthead
 --------------------------------------------------------------*/
@@ -297,7 +302,7 @@ header.masthead h1, header.masthead .h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 10px 0px;
   font-size: 15px;
   font-weight: 400;
   color: black;
@@ -625,7 +630,8 @@ padding-bottom: 70px;
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
   }
 
   #hero .animated {
@@ -643,7 +649,7 @@ padding-bottom: 70px;
 
 @media (max-width: 768px) {
   #hero {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   #hero h1 {
@@ -685,7 +691,7 @@ padding-bottom: 70px;
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -736,7 +742,30 @@ background: #64ab73;
   margin: 15px 0 0 0;
  
 }
+/* Add this CSS for responsiveness in the Services section */
+@media (max-width: 767px) {
+  .section-title h2 {
+    text-align: center; /* Center the text on smaller screens */
+  }
 
+  .section-title h2::before,
+  .section-title h2::after {
+    display: inline-block;
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #64ab73;
+    vertical-align: middle; /* Align the lines vertically in the middle */
+  }
+
+  .section-title h2::before {
+    margin-right: 5px; /* Adjust spacing between text and line on the right */
+  }
+
+  .section-title h2::after {
+    margin-left: 5px; /* Adjust spacing between text and line on the left */
+  }
+}
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -750,7 +779,7 @@ background: #64ab73;
   /* background: #cac0b3;
    */
   /* background: #e1ddd4; */
-  padding: 10px 0;
+  padding: 6px 0;
   text-align: center;
 }
 
@@ -767,28 +796,19 @@ background: #64ab73;
   align-items: center;
 }
 
-/* .clients .col-lg-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .clients .col-lg-2 {
-  flex: 0 0 auto;
-  max-width: 13.777%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} 
 
 .clients img {
-   /* width: 50%;  */
-  /* filter: grayscale(100); */
+ 
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
-  width: 68%; /* Set a fixed width of 100% */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  height: auto; 
 
 }
 
@@ -797,17 +817,23 @@ background: #64ab73;
   transform: scale(1.1);
 } */
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .clients img {
-    width: 40%;
+    width: 30%;
   }
 }
 
 @media (max-width: 575px) {
   .clients img {
-    width: 30%;
+    width: 40%;
   }
-}
+} 
+
+@media (min-width: 1000px) {
+  .clients img {
+    width: 50%;
+  }
+} 
 
 /*--------------------------------------------------------------
 # About Us
@@ -823,7 +849,6 @@ background: #64ab73;
 .page-section {
   padding: 5rem 0;
   }
-
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
@@ -1271,6 +1296,8 @@ background-color: #3b7150;
 }
 
 
+
+
 .services .icon-box:hover::before {
   /* background: #66a346; */
   /* background: #026666cc; */
@@ -1339,6 +1366,16 @@ background-color: #3b7150;
   color: #64ab73;
 }
 
+
+@media (max-width: 767px) {
+  .services-row {
+    flex-direction: column;
+  }
+
+  .services .icon-box {
+    width: 100%; /* Make each card take full width on small screens */
+  }
+}
 
 
 
@@ -1917,7 +1954,7 @@ background-color: #3b7150;
 
 .card-01 .card-body {
   position: relative;
-   padding-top: 45px;
+   padding-top: 60px;
   /* height: 300px;
   width: 100%;
   text-align: center;
@@ -2061,13 +2098,15 @@ background-color: #3b7150;
 
 .card__back .card-body .card-text{
   font-size: 19px;
+  max-width: 100%; /* Adjust as needed */
+  margin: 0 auto; /* Center the text horizontally */
 }
 
 .card__front .card-body .card-text {
-  font-size: 20px;
-
+  font-size: 17px;
+  max-width: 100%;
+  margin: 3px auto;
 }
-
 
 /* .card-02 .card-text{
   font-size: 22px;
@@ -2084,7 +2123,39 @@ background-color: #3b7150;
   display: block; /* Ensures that the width and height properties are applied */
   margin: 0 auto; /* Centers the image horizontally */
 }
+.card {
+  overflow: hidden;
+}
 
+
+.card__front .card-body {
+  padding: 20px; 
+} 
+
+
+@media (max-width: 768px) {
+ 
+  .card__back .card-body .card-text,
+  .card__front .card-body .card-text {
+  
+    max-width: 100%; /* Ensure it fits within the card */
+    margin: 0 auto; /* Center the text horizontally */
+  }
+  .card__back .card-body .card-text{
+    font-size: 14.9px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .card__back .card,
+  .card__front .card {
+    width: 90%; /* Adjust as needed */
+    
+  }
+
+
+}
 /* .pricing .box {
   background: #f9f9f9;
   text-align: center;
@@ -2255,6 +2326,7 @@ color: black;
   font-family: 'Lora', sans-serif;
   /* color: black; */
   color: black;
+  margin: 15px 0 15px 0;
 }
 
 
