@@ -280,12 +280,12 @@
     var phoneNumber = '+971504172676';
   
     $('#contactUsBtn').on('click', function (e) {
-      e.preventDefault();
+e.preventDefault();
       var whatsappLink = 'https://api.whatsapp.com/send?phone=' + encodeURIComponent(phoneNumber);
       window.open(whatsappLink, '_blank');
-    }); 
+      });
 
- 
+    
     var scrollThreshold = 600; 
     var header = document.getElementById("header");
     var isNavbarVisible = false;
@@ -301,4 +301,15 @@
     });
   });
 
-})();
+  document.addEventListener("DOMContentLoaded", function () {
+    var phoneNumber = '+971504172676';
+  
+    $('#contactUs').on('click', function (e) {
+e.preventDefault();
+      var whatsappLink = 'https://api.whatsapp.com/send?phone=' + encodeURIComponent(phoneNumber);
+      window.open(whatsappLink, '_blank');
+      });
+    });
+}
+)
+();

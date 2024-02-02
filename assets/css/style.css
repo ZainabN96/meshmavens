@@ -629,7 +629,8 @@ padding-bottom: 70px;
   /* border: 2px solid #66a346; */
   /* border: 2px solid #026666cc; */
   /* border: 2px solid #64ab73; */
-  border: 2px solid #64ab73
+  border: 2px solid #64ab73;
+  cursor: pointer;
 }
 
  .btn-get-started:hover {
@@ -882,7 +883,7 @@ background: #64ab73;
 
 @media (max-width: 575px) {
   .clients img {
-    width: 25%;
+    width: 35%;
   }
 } 
 
