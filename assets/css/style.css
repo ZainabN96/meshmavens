@@ -759,11 +759,11 @@ background: #64ab73;
 }
 
 .section-title h2::before {
-  margin: 0 15px 10px 0;
+  margin: 0 17px 5px 0;
 }
 
 .section-title h2::after {
-  margin: 0 0 10px 15px;
+  margin: 0 0 5px 15px;
 }
 
 .section-title p {
@@ -772,13 +772,13 @@ background: #64ab73;
 }
 
 @media only screen and (max-width: 350px) {
-  .section-title h2 {
+  .features .section-title h2 {
     text-align: center; 
     font-size: 17px;
   }
 
-  .section-title h2::before,
-  .section-title h2::after {
+  .features .section-title h2::before,
+  .features .section-title  h2::after {
     display: inline-block;
     content: "";
     width: 11px;
@@ -787,23 +787,23 @@ background: #64ab73;
     vertical-align: middle; 
   }
 
-  .section-title h2::before {
+  .features .section-title  h2::before {
     margin-right: 2px; 
   }
 
-  .section-title h2::after {
+  .features .section-title  h2::after {
     margin-left: 2px; 
   }
 }
 
-@media only screen and (min-width: 350px) {
-  .section-title h2 {
+@media only screen and (max-width: 350px) {
+ .section-title h2 {
     text-align: center; 
-    font-size: 21px;
+    font-size: 27px;
   }
 
-  .section-title h2::before,
-  .section-title h2::after {
+   .section-title h2::before,
+ .section-title  h2::after {
     display: inline-block;
     content: "";
     width: 11px;
@@ -812,11 +812,38 @@ background: #64ab73;
     vertical-align: middle; 
   }
 
-  .section-title h2::before {
+.section-title  h2::before {
     margin-right: 2px; 
   }
 
-  .section-title h2::after {
+.section-title  h2::after {
+    margin-left: 2px; 
+  }
+}
+
+
+
+@media only screen and (min-width: 350px) {
+.section-title h2 {
+    text-align: center; 
+    font-size: 24px;
+  }
+
+.section-title h2::before,
+.section-title h2::after {
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 2px;
+    background: #64ab73;
+    vertical-align: middle; 
+  }
+
+.section-title h2::before {
+    margin-right: 2px; 
+  }
+
+.section-title h2::after {
     margin-left: 2px; 
   }
 }
@@ -907,15 +934,9 @@ background: #64ab73;
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  /* background: #f3f9fd; */
-  /* background: #f1ffe4; */
-  /* background: #e1ede5; */
 
   background: #e1ede5;
 
-  /* background: #cac0b3;
-   */
-  /* background: #e1ddd4; */
   padding: 6px 0;
   text-align: center;
 }
@@ -954,6 +975,8 @@ background: #64ab73;
   transform: scale(1.1);
 } */
 
+
+
  @media (max-width: 768px) {
   .clients img {
     width: 30%;
@@ -962,7 +985,7 @@ background: #64ab73;
 
 @media (max-width: 575px) {
   .clients img {
-    width: 35%;
+    width: 40%;
   }
 } 
 
@@ -976,6 +999,17 @@ background: #64ab73;
 # About Us
 --------------------------------------------------------------*/
 
+@media (max-width: 400px) {
+body p {
+    font-size: 16px;
+}
+} 
+
+@media (min-width: 400px) {
+  body p {
+    font-size: 18px;
+}
+} 
 
 
 /* .bg-primary {
@@ -1538,7 +1572,7 @@ background-color: #3b7150;
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .services .title a {
@@ -1548,7 +1582,7 @@ background-color: #3b7150;
 }
 
 .services .description {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 30px;
   margin-bottom: 0;
   color: white;
@@ -1742,13 +1776,15 @@ background-color: #3b7150;
 .features .icon-box h3 a:hover {
   /* color: #66a346; */
   /* color: #026666cc; */
-  color: #64ab73;
+  color: #64ab73 ;
 }
 
 .features .icon-box:hover {
   /* background: #eef7fc;
   background: #FAF5E9; */
-  background: #fff;
+  /* background: #e6f9ea; */
+  background: #e6f9ea;
+
 
 }
 
@@ -2403,13 +2439,12 @@ background-color: #3b7150;
   .card__back .card-01 .card-text{
     font-size: 14px;
     text-align: center;
-  
     }
+
      .card__back .card-02 .card-text {
           font-size: 15px;
     margin-top: 20px;
      text-align: center;
-    
     } 
     .card__back .card-02 {
       height: 280px;
@@ -2422,7 +2457,7 @@ background-color: #3b7150;
     .card-title{
      font-size: 20px;
     }
-    
+
   }
 
   @media only screen and (max-width: 400px) {
@@ -2547,7 +2582,7 @@ text-align: center;
 
 
 
-  @media screen and (min-device-width: 993px) and (max-device-width: 1199px)  {
+  @media screen and (min-device-width: 993px) and (max-device-width: 1210px)  {
 
   
 
@@ -2572,21 +2607,21 @@ text-align: center;
       
   }
 
-  @media screen and (min-device-width: 1199px) and (max-device-width: 1250px)  {
+  @media screen and (min-device-width: 1211px) and (max-device-width: 1280px)  {
 
     .card__back .card-01 .card-text{
-      font-size: 26px;
+      font-size: 22px;
       max-width: 100%; 
-     margin-top: 30px;
+     margin-top: 10px;
     }
 
 
     .card__back .card-02 {
-      height: 300px;
+      height: 340px;
       }
 
       .card__back .card-02 .card-text{
-        font-size: 25px;
+        font-size: 24px;
         max-width: 100%; 
        margin-top: 40px;
        text-align: center;
@@ -2748,7 +2783,7 @@ color: black;
 # Contact
 --------------------------------------------------------------*/
 .contact .contact-about h3 {
-  font-size: 28px;
+  font-size: 22px;
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1;
@@ -2836,8 +2871,8 @@ color: black;
   color: #fff;
   background: #64ab73;
   text-align: center;
-  padding: 15px;
-  font-weight: 600;
+  padding: 14px;
+  font-weight: 700;
 }
 
 .contact .php-email-form .loading {
@@ -2984,7 +3019,7 @@ color: black;
 }
 
 #footer .credits {
-  font-size: 14px;
+  font-size: 10px;
   padding-top: 5px;
   color: black;
 }
@@ -3000,7 +3035,8 @@ color: black;
 
 #footer .footer-links a {
   color: #64ab73;
-  padding-left: 15px;
+  padding-left: 10px;
+  font-size: 12px;
 }
 
 #footer .footer-links a:first-child {
