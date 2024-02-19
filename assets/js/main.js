@@ -291,6 +291,20 @@
     }
   });
   
+   
+  $("#visiontoggle").click(function() {
+    var elem = $("#visiontoggle").text();
+    if (elem == "Read More") {
+    
+      $("#visiontoggle").text("Read Less");
+      $("#textvision").slideDown();
+    } else {
+     
+      $("#visiontoggle").text("Read More");
+      $("#textvision").slideUp();
+    }
+  });
+  
 
   document.addEventListener("DOMContentLoaded", function () {
     var phoneNumber = '+971504172676';
