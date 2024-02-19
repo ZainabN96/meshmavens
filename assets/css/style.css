@@ -1548,13 +1548,14 @@ background-color: #3b7150;
 }
 
 .services .description {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 30px;
   margin-bottom: 0;
   color: white;
+  padding-left: 10px;
 }
 
-.services .icon-box:hover .title a,
+.services .icon-box:hover .title a
 .services .icon-box:hover .description {
   /* color: #fff; */
   color: white;
@@ -1569,6 +1570,10 @@ background-color: #3b7150;
   /* color: #66a346; */
   /* color: #026666cc; */
   color: #64ab73;
+}
+
+.services ul{
+  list-style: none;
 }
 
 
