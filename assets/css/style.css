@@ -1589,8 +1589,8 @@ background-color: #3b7150;
   padding-left: 10px;
 }
 
-.services .icon-box:hover .title a
-.services .icon-box:hover .description {
+.services-row .icon-box:hover .title a
+{
   /* color: #fff; */
   color: white;
 
