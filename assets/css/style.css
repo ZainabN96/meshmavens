@@ -975,19 +975,24 @@ background: #64ab73;
   transform: scale(1.1);
 } */
 
-
-
- @media (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 399px) {
   .clients img {
-    width: 30%;
+    width: 40%;
   }
 }
 
-@media (max-width: 575px) {
+ 
+
+@media (min-width: 400px) and (max-width: 575px) {
   .clients img {
     width: 40%;
   }
 } 
+@media (min-width: 575px) and (max-width: 768px) {
+  .clients img {
+    width: 30%;
+  }
+}
 
 @media (min-width: 769px) {
   .clients img {
@@ -1018,7 +1023,7 @@ body p {
 
 
 .page-section {
-  padding: 5rem 0;
+  padding: 4rem 0;
   }
 hr.divider {
   height: 0.2rem;
@@ -1491,13 +1496,16 @@ background-color: #3b7150;
   justify-content: space-between; 
 }
 
-.change {
+.services .section-title {
+  color: white;
+}
+/* .change {
   display: none;
 }
 
 .icon-box:hover > .change {
   display: block;
-}
+} */
 
 
 .services .icon-box {
@@ -1505,26 +1513,26 @@ background-color: #3b7150;
   margin: 10px; 
   position: relative;
   overflow: hidden;
-  /* background: #fff; */
-  background-color: #fff ;
+  
+  border-radius: 50px;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background: #64ab73;
+  color: black;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
-}
+} 
 
-.services .section-title {
-  color: black;
-}
-.services .icon-box::before {
+
+/* .services .icon-box::before {
   content: "";
   position: absolute;
-  /* background: #e1f0fa; */
-  /* background: #f1ffe4; */
-  /* background: #ede1e1; */
-  /* background: #f3f3ec;   */
-  /* background: #faf5e9; */
-  /* background: #b5d48b; */
+  
   right: -60px;
   top: -40px;
   width: 100px;
@@ -1532,11 +1540,10 @@ background-color: #3b7150;
   border-radius: 50px;
   transition: all 0.3s;
   z-index: -1;
-}
+} */
 
-.services .icon-box:hover::before {
-  /* background: #66a346; */
-  /* background: #026666cc; */
+/* .services .icon-box:hover::before {
+
   background: #64ab73;
   color: black;
   right: 0;
@@ -1545,10 +1552,23 @@ background-color: #3b7150;
   height: 100%;
   border-radius: 0px;
 }
+ */
 
+ /* .services .icon-box {
 
+  background: #64ab73;
+  color: black;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+ */
 
-
+ .services p{
+  color: black;
+ }
 .services .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
@@ -1571,38 +1591,36 @@ background-color: #3b7150;
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 22px;
 }
 
 .services .title a {
   color: black;
-  
-  /* color: #64ab73; */
+
 }
 
 .services .description {
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 21px;
+  line-height: 32px;
   margin-bottom: 0;
   color: white;
   padding-left: 10px;
 }
 
-.services-row .icon-box:hover .title a
+.services-row .icon-box .title a
 {
-  /* color: #fff; */
-  color: white;
+  
+  color: black;
 
 }
 
-.services .icon-box:hover .icon {
+.services .icon-box .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
-  /* color: #66a346; */
-  /* color: #026666cc; */
+.services .icon-box .icon i {
+  
   color: #64ab73;
 }
 
@@ -1619,6 +1637,15 @@ background-color: #3b7150;
   .services .icon-box {
     width: 100%;
   }
+  
+.services .description {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: white;
+  padding-left: 10px;
+}
+
 }
 
 
@@ -1630,6 +1657,16 @@ background-color: #3b7150;
   .services .icon-box {
     width: 100%;
   }
+
+  
+.services .description {
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: white;
+  padding-left: 10px;
+}
+
 }
 
 
@@ -2322,7 +2359,7 @@ background-color: #3b7150;
   float: left;
   width: 100%;
   text-align: center;
-  height: 380px;
+  height: 370px;
 }
 
 .card__front, .card__back {
@@ -2334,8 +2371,8 @@ background-color: #3b7150;
 }
 
 .card__back .card {
-  width: 100%;
-  height: 350px;
+  width: 90%;
+  height: 370px;
   background-color: #64ab73;
   color: white;
  
@@ -2355,7 +2392,7 @@ background-color: #3b7150;
 
 
 
-.card__back {
+ .card__back {
  
   -webkit-transform: rotateY(-180deg);
    -ms-transform: rotateY(-180deg);
@@ -2384,7 +2421,7 @@ background-color: #3b7150;
   -webkit-transform: rotateY(0);
   -ms-transform: rotateY(0);
   transform: rotateY(0);
-}  
+}   
 .card-title{
   width: 100%;
   color: #000;
@@ -2399,7 +2436,7 @@ background-color: #3b7150;
 .card__back .card-body .card-text{
   font-size: 17px;
   font-weight: 100;
-  max-width: 100%; /* Adjust as needed */
+  max-width: 100%; 
   margin: 0 auto; /* Center the text horizontally */
 }
 
@@ -2419,9 +2456,9 @@ background-color: #3b7150;
 } 
 
 .icon-image {
-  width: 200px; /* Adjust the width as per your requirement */
-  height: 200px; /* Adjust the height as per your requirement */
-  display: block; /* Ensures that the width and height properties are applied */
+  width: 200px; 
+  height: 200px; 
+  display: block; 
   margin: 0 auto; /* Centers the image horizontally */
 }
 .card {
@@ -2430,26 +2467,35 @@ background-color: #3b7150;
 
 
 .card__front .card-body {
-  padding: 20px; 
+  padding: 25px; 
 } 
 
 
-@media only screen and (max-width: 300px) {
+@media (min-width: 281px) and (max-width: 300px) {
  
+
+  .card__front .card {
+    width: 90%;
+    height: 340px;
+}
   .card__back .card-01 .card-text{
     font-size: 14px;
     text-align: center;
     }
 
-     .card__back .card-02 .card-text {
-          font-size: 15px;
-    margin-top: 20px;
+  .card__back .card-01 {
+    width: 90%;
+      height: 340px;
+    } 
+  .card__back .card-02 .card-text {
+          font-size: 18px;
+    margin-top: 10px;
      text-align: center;
     } 
-    .card__back .card-02 {
-      height: 280px;
-    }
-    .card__front .card-body .card-text {
+  .card__back .card-02 {
+      height: 370px;
+    } 
+  .card__front .card-body .card-text {
       font-size: 14px;
       max-width: 100%;
       margin: 3px auto;
@@ -2460,39 +2506,39 @@ background-color: #3b7150;
 
   }
 
-  @media only screen and (max-width: 400px) {
+  @media (min-width: 301px) and (max-width: 366px) {
  
-    .card__back .card-body .card-text{
-      font-size: 15px;
-      text-align: center;
-      
-      }
-       .card__back .card-02 .card-body {
-        width: 100%;
-        height: 200px;
-      } 
-
-      .card__back .card-02 .card-text {
-        font-size: 15px;
-        margin-top: 25px;
-        text-align: center;
-  
-  } 
-  .card__back .card-02 {
-    height: 250px;
+    .card__front .card {
+      width: 90%;
+      height: 340px;
   }
-      .card__front .card-body .card-text {
-        font-size: 14px;
-        max-width: 100%;
-        margin: 3px auto;
+  .card__front .card-body .card-text {
+    font-size: 14px;
+    max-width: 100%;
+    margin: 3px auto;
+  }
+  .card-title{
+   font-size: 20px;
+  }
+    .card__back .card-01 .card-text{
+      font-size: 16px;
+      text-align: center;
+      margin-top: 18px;
       }
-      .card-title{
-       font-size: 20px;
-      }
-      
+  
+  .card  .card__back {
+      width: 90%;
+      height: 340px;
+      } 
+    .card__back .card-02 .card-text {
+            font-size: 17px;
+      margin-top: 30px;
+       text-align: center;
+      } 
+        
     }
 
-@media (min-width: 400px) and (max-width: 429px) {
+@media (min-width: 367px) and (max-width: 429px) {
  
   .card__back .card-body .card-text,
   .card__front .card-body .card-text {
@@ -2501,51 +2547,85 @@ background-color: #3b7150;
     margin: 0 auto; /* Center the text horizontally */
   }
 
-  .card__back .card-02 .card-text {
-    font-size: 15px;
-margin-top: 20px;
-text-align: center;
-
-} 
-.card__back .card-02 {
-height: 230px;
+  .card__front .card {
+    width: 90%;
+    height: 340px;
 }
-
+.card__front .card-body .card-text {
+  font-size: 14px;
+  max-width: 100%;
+  margin: 3px auto;
 }
-
-
-  @media screen and (min-device-width: 400px) and (max-device-width: 500px) { 
-  /* .card__back .card-body .card-text{
-    font-size: 18.4px;
-    max-width: 100%; 
-    margin: 0 auto; 
+.card-title{
+ font-size: 20px;
+}
+  .card__back .card-01 .card-text{
+    font-size: 16px;
     text-align: center;
-  } */
+    margin-top: 18px;
+    }
 
+.card  .card__back {
+    width: 90%;
+    height: 340px;
+    } 
+  .card__back .card-02 .card-text {
+          font-size: 20px;
+    margin-top: 30px;
+     text-align: center;
+    } 
+      
+
+}
+
+
+  @media (min-device-width: 430px) and (max-device-width: 500px) { 
+ 
   
   .card__back .card-02 .card-text {
-    font-size: 18px;
-margin-top: 20px;
+    font-size: 20px;
+margin-top: 50px;
 text-align: center;
 
 } 
-.card__back .card-02 {
-height: 230px;
+.card__front .card {
+  width: 90%;
+  height: 340px;
 }
+
+.card  .card__back {
+  width: 90%;
+  height: 340px;
+  } 
+  .card__back .card-01 .card-text{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    }
 
   }
 
   @media screen and (min-device-width: 500px) and (max-device-width: 767px) {
 
-    .card__back .card-body .card-text{
-      font-size: 20px;
-      
-      margin: 0 auto; 
+    .card__back .card-02 .card-text {
+      font-size: 22px;
+  margin-top: 65px;
+  text-align: center;
+  
+  } 
+  .card__front .card {
+    width: 90%;
+    height: 340px;
+  }
+  
+  .card  .card__back {
+    width: 90%;
+    height: 340px;
+    } 
+    .card__back .card-01 .card-text{
+      font-size: 19px;
       text-align: center;
-    }
-
-    .card__back .card-02 {
-      height: 250px;
+      margin-top: 20px;
       }
       
   }
@@ -2574,7 +2654,7 @@ text-align: center;
 } 
     .card__back .card-02 {
 
-      height: 340px;
+      height: 355px;
       }
       
   }
@@ -2612,7 +2692,7 @@ text-align: center;
     .card__back .card-01 .card-text{
       font-size: 22px;
       max-width: 100%; 
-     margin-top: 10px;
+     margin-top: 5px;
     }
 
 
@@ -2623,11 +2703,33 @@ text-align: center;
       .card__back .card-02 .card-text{
         font-size: 24px;
         max-width: 100%; 
-       margin-top: 40px;
+       margin-top: 30px;
        text-align: center;
       }
   
       
+  }
+
+  @media only screen and (min-device-width: 1280px)  {
+
+    .card__back .card-01 .card-text{
+      font-size: 20px;
+      max-width: 100%; 
+     margin-top: 40px;
+    }
+
+
+    .card__back .card-02 {
+      height: 370px;
+      }
+
+      .card__back .card-02 .card-text{
+        font-size: 23px;
+        max-width: 100%; 
+       margin-top: 65px;
+       text-align: center;
+      }
+
   }
 
 /* .pricing .box {
