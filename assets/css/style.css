@@ -2471,7 +2471,7 @@ background-color: #3b7150;
 } 
 
 
-@media (min-width: 281px) and (max-width: 300px) {
+@media (min-width: 281px) and (max-width: 340px) {
  
 
   .card__front .card {
@@ -2479,18 +2479,19 @@ background-color: #3b7150;
     height: 340px;
 }
   .card__back .card-01 .card-text{
+ 
     font-size: 14px;
     text-align: center;
     }
 
   .card__back .card-01 {
     width: 90%;
-      height: 340px;
+    height: 340px;
     } 
   .card__back .card-02 .card-text {
-          font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
-     text-align: center;
+    text-align: center;
     } 
   .card__back .card-02 {
       height: 370px;
@@ -2506,7 +2507,7 @@ background-color: #3b7150;
 
   }
 
-  @media (min-width: 301px) and (max-width: 366px) {
+  @media (min-width: 340px) and (max-width: 366px) {
  
     .card__front .card {
       width: 90%;
