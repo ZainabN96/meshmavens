@@ -1601,12 +1601,13 @@ background-color: #3b7150;
 }
 
 .services .description {
-  font-size: 21px;
+  font-size: 19px;
   line-height: 32px;
   margin-bottom: 0;
   color: white;
   padding-left: 10px;
 }
+
 
 .services-row .icon-box .title a
 {
@@ -1671,7 +1672,74 @@ background-color: #3b7150;
 
 
 
+@media (min-width: 992px) and (max-width: 1200px)  {
+  
+  .services .icon-box {
+    width: 100%;
+  }
 
+.services .description {
+  font-size: 15px;
+  font-weight: 500px;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: white;
+  padding-left: 10px;
+}
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px)  {
+  
+  .services .icon-box {
+    width: 100%;
+  }
+
+.services .description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: white;
+  padding-left: 4px;
+}
+
+.services .icon-box {
+  padding: 10px;
+}
+
+
+}
+
+
+@media (min-width: 290px) and (max-width: 390px)  {
+  
+  .services .icon-box {
+    width: 100%;
+  }
+
+.services .description {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: white;
+  padding-left: 4px;
+}
+
+.services .icon-box {
+  padding: 10px;
+}
+
+.services .desc{
+  
+  font-size: 15px;
+  font-weight: 500;
+}
+
+}
 
 
 
