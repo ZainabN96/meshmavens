@@ -2159,6 +2159,13 @@ background-color: #3b7150;
   opacity: 1;
 }
 
+
+@media (min-width: 600px) {
+  .portfolio .portfolio-links {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
