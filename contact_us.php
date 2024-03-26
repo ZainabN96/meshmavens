@@ -45,7 +45,7 @@
     //$subject = "Test Email";
     //$message = "This is a test email.";
     //$headers = "From: khannnn839@gmail.com";
-    $to = "aymanmehmood999@gmail.com";
+    $to = "zainabnaveed.hcc@gmail.com";
     $name = $_POST["name"];
     $email = $_POST["email"];
     $subject = $_POST["subject"];
@@ -53,14 +53,14 @@
     $headers = "From: " . $name . " <" . $email . ">\r\n";
     $headers .= "Reply-To: " . $email . "\r\n"; // Add a Reply-To header
 
-// Send email
-if (mail($to, $subject, $message, $headers)) {
-    echo "Email sent successfully.";
-} else {
-    echo "Email sending failed.";
-    // Additional error handling
-    //echo "Error: " . error_get_last()['message'];
-}
+    // Send email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "OK";
+    } else {
+        echo "Email sending failed.";
+        // Additional error handling
+        //echo "Error: " . error_get_last()['message'];
+    }
 
 
 exit;
